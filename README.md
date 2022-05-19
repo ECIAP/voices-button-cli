@@ -63,9 +63,10 @@ yarn global add serve
 screen -S yarnserver
 cd ~/vuebutton/node_modules/.bin/xxx   #xxx为你之前设置的名字
 serve -s dist -l 8081
-**然后先按 Ctrl+A 再按 D**
+**然后先按 Ctrl+A 再按 D 以隐藏和保存 Screen会话**
 screen -S caddyserver
 caddy reverse-proxy --from your.domain --to localhost:8081  #将your.domain更改为你解析到服务器上的域名
+**然后先按 Ctrl+A 再按 D 以隐藏和保存 Screen会话**
 ```
 
 现在，打开 https://your.domain 即可看到语言按钮正常运行  
